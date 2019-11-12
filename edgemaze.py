@@ -254,7 +254,7 @@ def minus(a: Point, b: Point) -> Point:
 
 
 def analyze(maze: ndarray) -> Analyzed:
-    if maze == None or len(maze.shape) != 2:
+    if maze is None or len(maze.shape) != 2:
         raise TypeError("Input mazr must not be null and its dimension"
                         "must be exactly 2.")
     start = find_start(maze)
